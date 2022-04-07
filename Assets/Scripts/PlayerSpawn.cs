@@ -19,7 +19,7 @@ public class PlayerSpawn : MonoBehaviour
        // Debug.Log(spawnPositions.Length);
     }
 
-    private void RandomSpawn()
+    private int RandomSpawn()
     {
        int i=UnityEngine.Random.Range(1, spawnPositions.Length);
         Debug.Log(spawnPositions[i].transform.position);
@@ -43,6 +43,6 @@ public class PlayerSpawn : MonoBehaviour
         {
            k= RandomSpawn();
         }
-        transform.position = spawnPositions[k].transform.position;
+       // transform.position = spawnPositions[k].transform.position;
     }
 }
